@@ -1,8 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Webkul\RMA\Http\Controllers\Shop\RMAController;
+use Webkul\RMA\Http\Controllers\Shop\ReturnRequestController;
 
-Route::group(['middleware' => ['web', 'theme', 'locale', 'currency'], 'prefix' => 'rma'], function () {
-    Route::get('', [RMAController::class, 'index'])->name('shop.rma.index');
+Route::group([
+    'middleware' => ['web', 'locale', 'theme', 'currency']
+], function () {
+    /**
+     * Customer return request routes.
+     */
+    Route::prefix('rma/return-requests')->group(function () {
+        /**
+         * List customer return requests.
+         */
+        Route::get('', [ReturnRequestController::class, 'index'])
+            ->name('shop.rma.return-requests.index');
+    });
 });

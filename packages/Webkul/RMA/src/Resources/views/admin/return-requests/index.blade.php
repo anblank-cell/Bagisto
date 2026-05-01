@@ -2,12 +2,12 @@
 
     <!-- Title of the page -->
     <x-slot:title>
-        Package RMA
+       @lang('rma::app.admin.return-requests.title')
     </x-slot>
 
     <!-- Page Content -->
     <div class="page-content">
-        <h1>Package RMA</h1>
+         <x-admin::datagrid :src="route('admin.rma.return-requests.index')" />
     </div>
 
 </x-admin::layouts>

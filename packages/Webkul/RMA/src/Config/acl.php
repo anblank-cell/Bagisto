@@ -4,7 +4,7 @@ return [
     [
         'key'   => 'rma',
         'name'  => 'RMA',
-        'route' => 'admin.rma.index',
+        'route' => 'admin.rma.return-requests.index',
         'sort'  => 2
     ]
 ];

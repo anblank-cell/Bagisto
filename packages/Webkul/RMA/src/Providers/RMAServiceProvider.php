@@ -33,6 +33,10 @@ class RMAServiceProvider extends ServiceProvider
         Event::listen('bagisto.admin.layout.head', function($viewRenderEventManager) {
             $viewRenderEventManager->addTemplate('rma::admin.layouts.style');
         });
+
+        $this->publishes([
+            __DIR__ . '/../Resources/lang' => resource_path('lang/vendor/rma'),
+        ], 'rma-translations');
     }
 
     /**
