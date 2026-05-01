@@ -24,6 +24,18 @@ return [
                 'package_assets_directory' => 'src/Resources/assets',
             ],
         ],
+
+        'dynamic-theme' => [
+            'name' => 'Dynamic Theme',
+            'assets_path' => 'public/themes/shop/dynamic-theme',
+            'views_path' => 'resources/themes/dynamic-theme/views',
+
+            'vite' => [
+                'hot_file' => 'dynamic-theme-vite.hot',
+                'build_directory' => 'themes/shop/dynamic-theme/build',
+                'package_assets_directory' => 'src/Resources/assets',
+            ],
+        ],
     ],
 
     /*

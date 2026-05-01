@@ -35,7 +35,8 @@ use Webkul\SocialShare\Providers\SocialShareServiceProvider;
 use Webkul\Tax\Providers\TaxServiceProvider;
 use Webkul\Theme\Providers\ThemeServiceProvider;
 use Webkul\User\Providers\UserServiceProvider;
-
+use Webkul\RMA\Providers\RMAServiceProvider;
+use Webkul\DynamicTheme\Providers\DynamicThemeServiceProvider;
 return [
     /**
      * Application service providers.
@@ -79,4 +80,13 @@ return [
     TaxServiceProvider::class,
     ThemeServiceProvider::class,
     UserServiceProvider::class,
+    /**
+     * RMA service providers.
+     */
+    RMAServiceProvider::class,
+
+    /**
+     * Dynamic Theme service provider.
+     */
+    DynamicThemeServiceProvider::class,
 ];
