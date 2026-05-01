@@ -28,6 +28,18 @@ return [
             'status-pending'         => 'Pending',
             'status-approved'        => 'Approved',
             'status-rejected'        => 'Rejected',
+            'return-policy'          => 'Return Policy',
+            'return-policy-info'     => 'Configure your store return policy settings.',
+            'enable-return-policy'   => 'Enable Return Policy',
+            'auto-approve-returns'   => 'Auto Approve Returns',
+            'require-return-reason'  => 'Require Return Reason',
+            'return-policy-text'     => 'Return Policy Text',
+            'validation_example'     => 'Validation Examples',
+            'return_email'          => 'Return Request Email',
+            'max_return_days'       => 'Maximum Return Days',
+            'enable_notifications'  => 'Enable Email Notifications',
+            'notification_email'    => 'Notification Email',
+            'return_label_logo'     => 'Return Label Logo',
         ],
 
         'return-requests' => [
