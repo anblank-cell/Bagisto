@@ -13,6 +13,10 @@ class RMAController extends Controller
      */
     public function index(): View
     {
+        if (! bouncer()->hasPermission('rma')) {
+            abort(401, 'Unauthorized access.');
+        }
+        
         if (request()->ajax()) {
             // return datagrid(RMAControllerDataGrid::class)->process();
         }

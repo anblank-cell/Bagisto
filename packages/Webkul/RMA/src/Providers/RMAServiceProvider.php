@@ -12,7 +12,20 @@ class RMAServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->registerConfig();
+        $this->mergeConfigFrom(
+            dirname(__DIR__) . '/Config/admin-menu.php',
+            'menu.admin'
+        );
+
+        $this->mergeConfigFrom(
+            dirname(__DIR__) . '/Config/acl.php',
+            'acl'
+        );
+
+        $this->mergeConfigFrom(
+            dirname(__DIR__) . '/Config/system.php',
+            'core'
+        );
     }
 
     /**
