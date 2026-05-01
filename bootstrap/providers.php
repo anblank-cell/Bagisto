@@ -37,6 +37,7 @@ use Webkul\Theme\Providers\ThemeServiceProvider;
 use Webkul\User\Providers\UserServiceProvider;
 use Webkul\RMA\Providers\RMAServiceProvider;
 use Webkul\DynamicTheme\Providers\DynamicThemeServiceProvider;
+use Webkul\Marketplace\Providers\MarketplaceServiceProvider;
 return [
     /**
      * Application service providers.
@@ -89,4 +90,9 @@ return [
      * Dynamic Theme service provider.
      */
     DynamicThemeServiceProvider::class,
+
+    /**
+     * Marketplace service provider.
+     */
+    MarketplaceServiceProvider::class,
 ];

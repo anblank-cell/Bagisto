@@ -99,7 +99,8 @@
             "Webkul\\Theme\\": "packages/Webkul/Theme/src",
             "Webkul\\User\\": "packages/Webkul/User/src",
             "Webkul\\RMA\\": "packages/Webkul/RMA/src",
-            "Webkul\\DynamicTheme\\": "packages/Webkul/DynamicTheme/src"
+            "Webkul\\DynamicTheme\\": "packages/Webkul/DynamicTheme/src",
+            "Webkul\\Marketplace\\": "packages/Webkul/Marketplace/src"
         }
     },
     "autoload-dev": {

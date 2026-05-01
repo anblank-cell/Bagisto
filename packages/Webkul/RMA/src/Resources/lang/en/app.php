@@ -3,7 +3,9 @@
 return [
     'admin' => [
         'menu' => [
-            'rma' => 'RMA',
+            'rma'             => 'RMA',
+            'return-requests' => 'Return Requests',
+            'settings'        => 'Settings',
         ],
 
         'acl' => [
